@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Facebook Title Monitor
-// @namespace   fbtitlemon
+// @namespace   ca.chrisdouglas.fbtitlemon
 // @version     2019.01.28
 // @description Keeps the browser's title bar to 'Facebook', removing notification clutter.
 // @author      chrisgdouglas
