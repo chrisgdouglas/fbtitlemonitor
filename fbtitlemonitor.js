@@ -8,6 +8,7 @@
 // @include     http*://*facebook.com*
 // @grant       none
 // @updateURL   https://raw.githubusercontent.com/chrisgdouglas/fbtitlemonitor/master/fbtitlemonitor.js
+// @downloadURL https://raw.githubusercontent.com/chrisgdouglas/fbtitlemonitor/master/fbtitlemonitor.js
 // ==/UserScript==
 var targetNode = document.querySelector('title');
 var config = { childList: true, subtree: true };
