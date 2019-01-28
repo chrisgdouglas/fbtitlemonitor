@@ -10,15 +10,18 @@
 // @updateURL   https://raw.githubusercontent.com/chrisgdouglas/fbtitlemonitor/master/fbtitlemonitor.js
 // @downloadURL https://raw.githubusercontent.com/chrisgdouglas/fbtitlemonitor/master/fbtitlemonitor.js
 // ==/UserScript==
-var targetNode = document.querySelector('title');
-var config = { childList: true, subtree: true };
-var titleMon = function (mutationsList, observer) {
-    var fbTitle = "Facebook";
-    for (var mutation of mutationsList) {
-        if (mutation.type == 'childList' && targetNode.innerHTML !== "Facebook") {
-            targetNode.innerHTML = fbTitle;
+(() => {
+    "use strict";
+    var targetNode = document.querySelector('title');
+    var config = { childList: true, subtree: true };
+    var titleMon = function (mutationsList, observer) {
+        var fbTitle = "Facebook";
+        for (var mutation of mutationsList) {
+            if (mutation.type === 'childList' && targetNode.innerHTML !== "Facebook") {
+                targetNode.innerHTML = fbTitle;
+            }
         }
-    }
-};
-var observer = new MutationObserver(titleMon);
-observer.observe(targetNode, config);
+    };
+    var observer = new MutationObserver(titleMon);
+    observer.observe(targetNode, config);
+}) ();
