@@ -9,7 +9,7 @@ Tamper/GreaseMonkey Userscript to monitor and keep Facebook's browser title only
 	* Safari - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=safari).
 	* Dolphin - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=dolphin).
 	* UC Browser - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=ucweb).
-2. [Install by clicking this link](https://raw.githubusercontent.com/chrisgdouglas/fbtitlemonitor/master/fbtitlemonitor.js).
+2. [Install by clicking this link](https://github.com/chrisgdouglas/fbtitlemonitor/raw/master/fbtitlemonitor.user.js).
 
 ## Updating
 
