@@ -12,16 +12,16 @@
 // ==/UserScript==
 (() => {
     "use strict";
-    var targetNode = document.querySelector('title');
-    var config = { childList: true, subtree: true };
-    var titleMon = function (mutationsList, observer) {
-        var fbTitle = "Facebook";
-        for (var mutation of mutationsList) {
+    let targetNode = document.querySelector('title');
+    let config = { childList: true, subtree: true };
+    let titleMon = function (mutationsList, observer) {
+        let fbTitle = "Facebook";
+        for (let mutation of mutationsList) {
             if (mutation.type === 'childList' && targetNode.innerHTML !== "Facebook") {
                 targetNode.innerHTML = fbTitle;
             }
         }
     };
-    var observer = new MutationObserver(titleMon);
+    let observer = new MutationObserver(titleMon);
     observer.observe(targetNode, config);
 }) ();
