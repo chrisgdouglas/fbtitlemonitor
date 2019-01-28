@@ -17,7 +17,7 @@
     let titleMon = function (mutationsList, observer) {
         let fbTitle = "Facebook";
         for (let mutation of mutationsList) {
-            if (mutation.type === 'childList' && targetNode.innerHTML !== "Facebook") {
+            if (mutation.type === 'childList' && targetNode.innerHTML !== fbTitle) {
                 targetNode.innerHTML = fbTitle;
             }
         }
