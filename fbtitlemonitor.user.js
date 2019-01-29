@@ -7,8 +7,8 @@
 // @license     MIT
 // @include     http*://*facebook.com*
 // @grant       none
-// @updateURL   https://raw.githubusercontent.com/chrisgdouglas/fbtitlemonitor/master/fbtitlemonitor.js
-// @downloadURL https://raw.githubusercontent.com/chrisgdouglas/fbtitlemonitor/master/fbtitlemonitor.js
+// @updateURL   https://github.com/chrisgdouglas/fbtitlemonitor/raw/master/fbtitlemonitor.user.js
+// @downloadURL https://github.com/chrisgdouglas/fbtitlemonitor/raw/master/fbtitlemonitor.user.js
 // ==/UserScript==
 (() => {
     "use strict";
